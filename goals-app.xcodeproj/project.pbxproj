@@ -9,23 +9,29 @@
 /* Begin PBXBuildFile section */
 		05BFA43825383A860021C1B1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05BFA43725383A860021C1B1 /* AppDelegate.swift */; };
 		05BFA43A25383A860021C1B1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05BFA43925383A860021C1B1 /* SceneDelegate.swift */; };
-		05BFA43C25383A860021C1B1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05BFA43B25383A860021C1B1 /* ViewController.swift */; };
+		05BFA43C25383A860021C1B1 /* GoalsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05BFA43B25383A860021C1B1 /* GoalsVC.swift */; };
 		05BFA43F25383A860021C1B1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05BFA43D25383A860021C1B1 /* Main.storyboard */; };
 		05BFA44225383A860021C1B1 /* goals_app.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 05BFA44025383A860021C1B1 /* goals_app.xcdatamodeld */; };
 		05BFA44425383A890021C1B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 05BFA44325383A890021C1B1 /* Assets.xcassets */; };
 		05BFA44725383A890021C1B1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05BFA44525383A890021C1B1 /* LaunchScreen.storyboard */; };
+		05BFA453253984CD0021C1B1 /* GoalCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05BFA452253984CD0021C1B1 /* GoalCell.swift */; };
+		05BFA455253B1AE60021C1B1 /* GoalType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05BFA454253B1AE60021C1B1 /* GoalType.swift */; };
+		05BFA457253D7AD10021C1B1 /* CreateGoalsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05BFA456253D7AD10021C1B1 /* CreateGoalsVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		05BFA43425383A860021C1B1 /* goals-app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "goals-app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		05BFA43725383A860021C1B1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		05BFA43925383A860021C1B1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		05BFA43B25383A860021C1B1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		05BFA43B25383A860021C1B1 /* GoalsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalsVC.swift; sourceTree = "<group>"; };
 		05BFA43E25383A860021C1B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		05BFA44125383A860021C1B1 /* goals_app.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = goals_app.xcdatamodel; sourceTree = "<group>"; };
 		05BFA44325383A890021C1B1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		05BFA44625383A890021C1B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		05BFA44825383A890021C1B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		05BFA452253984CD0021C1B1 /* GoalCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalCell.swift; sourceTree = "<group>"; };
+		05BFA454253B1AE60021C1B1 /* GoalType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalType.swift; sourceTree = "<group>"; };
+		05BFA456253D7AD10021C1B1 /* CreateGoalsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateGoalsVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,7 +82,8 @@
 		05BFA44E25383A930021C1B1 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				05BFA43B25383A860021C1B1 /* ViewController.swift */,
+				05BFA43B25383A860021C1B1 /* GoalsVC.swift */,
+				05BFA456253D7AD10021C1B1 /* CreateGoalsVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -84,6 +91,7 @@
 		05BFA44F25383AA00021C1B1 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				05BFA452253984CD0021C1B1 /* GoalCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -91,6 +99,7 @@
 		05BFA45025383AA80021C1B1 /* Enums */ = {
 			isa = PBXGroup;
 			children = (
+				05BFA454253B1AE60021C1B1 /* GoalType.swift */,
 			);
 			path = Enums;
 			sourceTree = "<group>";
@@ -174,8 +183,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				05BFA44225383A860021C1B1 /* goals_app.xcdatamodeld in Sources */,
-				05BFA43C25383A860021C1B1 /* ViewController.swift in Sources */,
+				05BFA43C25383A860021C1B1 /* GoalsVC.swift in Sources */,
+				05BFA455253B1AE60021C1B1 /* GoalType.swift in Sources */,
+				05BFA457253D7AD10021C1B1 /* CreateGoalsVC.swift in Sources */,
 				05BFA43825383A860021C1B1 /* AppDelegate.swift in Sources */,
+				05BFA453253984CD0021C1B1 /* GoalCell.swift in Sources */,
 				05BFA43A25383A860021C1B1 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
